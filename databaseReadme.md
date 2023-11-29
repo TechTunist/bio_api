@@ -34,3 +34,12 @@ CREATE DATABASE # creates a new database
     # To see specific tables, add the name of the table after \d <table_name>:
         \d address
 ```
+
+
+# If the system tries to login to the database using the role "tunist", use this command to switch user to "postgres":
+
+```bash
+    sudo -u postgres psql -d postgres
+```
+
+# The above command specifies both the database and the user to be "postgres" which is the default.
